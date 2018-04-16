@@ -1,0 +1,148 @@
+CC     = "C:\Program Files\MATLAB\R2014b\sys\lcc64\lcc64\bin\lcc64.exe"
+LD     = "C:\Program Files\MATLAB\R2014b\sys\lcc64\lcc64\bin\lcclnk64.exe"
+LIBCMD = "C:\Program Files\MATLAB\R2014b\sys\lcc64\lcc64\bin\lcclib64.exe"
+CFLAGS = -dll -noregistrylookup  -c -Zp8 -DLCC_WIN64 -DMATLAB_MEX_FILE -DMX_COMPAT_32 -nodeclspec 
+LDFLAGS = -s -dll -L"C:\Program Files\MATLAB\R2014b\sys\lcc64\lcc64\lib64" -entry LibMain -map sfun.map 
+LIBFLAGS = 
+
+OBJECTS = \
+	"Experiment_2_cs_sfun.obj"\
+	"c1_Experiment_2_cs.obj"\
+	"c2_Experiment_2_cs.obj"\
+	"c3_Experiment_2_cs.obj"\
+	"c4_Experiment_2_cs.obj"\
+	"c5_Experiment_2_cs.obj"\
+	"c6_Experiment_2_cs.obj"\
+	"c7_Experiment_2_cs.obj"\
+	"c8_Experiment_2_cs.obj"\
+	"c9_Experiment_2_cs.obj"\
+	"c10_Experiment_2_cs.obj"\
+	"c11_Experiment_2_cs.obj"\
+	"c12_Experiment_2_cs.obj"\
+	"c13_Experiment_2_cs.obj"\
+	"c14_Experiment_2_cs.obj"\
+	"c15_Experiment_2_cs.obj"\
+	"c16_Experiment_2_cs.obj"\
+	"c17_Experiment_2_cs.obj"\
+	"c18_Experiment_2_cs.obj"\
+	"c19_Experiment_2_cs.obj"\
+	"c20_Experiment_2_cs.obj"\
+	"c21_Experiment_2_cs.obj"\
+	"c22_Experiment_2_cs.obj"\
+	"c23_Experiment_2_cs.obj"\
+	"c24_Experiment_2_cs.obj"\
+	"c25_Experiment_2_cs.obj"\
+	"c26_Experiment_2_cs.obj"\
+	"c27_Experiment_2_cs.obj"\
+	"c28_Experiment_2_cs.obj"\
+	"c29_Experiment_2_cs.obj"\
+	"c30_Experiment_2_cs.obj"\
+	"c31_Experiment_2_cs.obj"\
+	"c32_Experiment_2_cs.obj"\
+	"c33_Experiment_2_cs.obj"\
+	"c34_Experiment_2_cs.obj"\
+	"c35_Experiment_2_cs.obj"\
+	"c36_Experiment_2_cs.obj"\
+	"c37_Experiment_2_cs.obj"\
+	"Experiment_2_cs_sfun_registry.obj"\
+	"lccstub.obj"\
+	"Experiment_2_cs_sfun.def"\
+	"C:\Workspace\PreScan Files\Experiment_2\slprj\_sfprj\Experiment_2_cs\PreScanUsefulBlocks\sfun\src\PreScanUsefulBlocks_sfun.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\sf_runtime.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libmwblas.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libmx.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libmex.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libmat.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libfixedpoint.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libut.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libmwmathutil.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libemlrt.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libmwsl_log_load_blocks.lib"\
+	"C:\Program Files\MATLAB\R2014b\extern\lib\win64\microsoft\libmwsimulink.lib"\
+	"C:\Program Files\MATLAB\R2014b\lib\win64\libmwipp.lib"\
+
+INCLUDE_PATH= -I"C:\Program Files\MATLAB\R2014b\sys\lcc64\lcc64\include64"  -I"C:\Program Files\MATLAB\R2014b\extern\include"  -I"C:\Program Files\MATLAB\R2014b\simulink\include"  -I"C:\Program Files\MATLAB\R2014b\stateflow\c\mex\include"  -I"C:\Program Files\MATLAB\R2014b\rtw\c\src"  -I"C:\Workspace\PreScan Files\Experiment_2\slprj\_sfprj\Experiment_2_cs\_self\sfun\src"  -I"c:\workspace\prescan files\experiment_2\slprj\_sfprj\experiment_2_cs\_self\sfun\src"  -I"c:\workspace\prescan files\experiment_2"  -I"c:\program files\PreScan\prescan_8.1.0\simulationcore\include\sensors\interfacertw"  -I"c:\program files\PreScan\prescan_8.1.0\simulationcore\include\platform"  -I"c:\program files\PreScan\prescan_8.1.0\Plugins\v2xplugin_r836\Matlab" 
+ 
+
+Experiment_2_cs_sfun.mexw64 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o Experiment_2_cs_sfun.mexw64 @Experiment_2_cs_sfun.lmko
+Experiment_2_cs_sfun.obj :	"Experiment_2_cs_sfun.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "Experiment_2_cs_sfun.c"
+c1_Experiment_2_cs.obj :	"c1_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c1_Experiment_2_cs.c"
+c2_Experiment_2_cs.obj :	"c2_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c2_Experiment_2_cs.c"
+c3_Experiment_2_cs.obj :	"c3_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c3_Experiment_2_cs.c"
+c4_Experiment_2_cs.obj :	"c4_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c4_Experiment_2_cs.c"
+c5_Experiment_2_cs.obj :	"c5_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c5_Experiment_2_cs.c"
+c6_Experiment_2_cs.obj :	"c6_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c6_Experiment_2_cs.c"
+c7_Experiment_2_cs.obj :	"c7_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c7_Experiment_2_cs.c"
+c8_Experiment_2_cs.obj :	"c8_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c8_Experiment_2_cs.c"
+c9_Experiment_2_cs.obj :	"c9_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c9_Experiment_2_cs.c"
+c10_Experiment_2_cs.obj :	"c10_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c10_Experiment_2_cs.c"
+c11_Experiment_2_cs.obj :	"c11_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c11_Experiment_2_cs.c"
+c12_Experiment_2_cs.obj :	"c12_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c12_Experiment_2_cs.c"
+c13_Experiment_2_cs.obj :	"c13_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c13_Experiment_2_cs.c"
+c14_Experiment_2_cs.obj :	"c14_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c14_Experiment_2_cs.c"
+c15_Experiment_2_cs.obj :	"c15_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c15_Experiment_2_cs.c"
+c16_Experiment_2_cs.obj :	"c16_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c16_Experiment_2_cs.c"
+c17_Experiment_2_cs.obj :	"c17_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c17_Experiment_2_cs.c"
+c18_Experiment_2_cs.obj :	"c18_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c18_Experiment_2_cs.c"
+c19_Experiment_2_cs.obj :	"c19_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c19_Experiment_2_cs.c"
+c20_Experiment_2_cs.obj :	"c20_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c20_Experiment_2_cs.c"
+c21_Experiment_2_cs.obj :	"c21_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c21_Experiment_2_cs.c"
+c22_Experiment_2_cs.obj :	"c22_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c22_Experiment_2_cs.c"
+c23_Experiment_2_cs.obj :	"c23_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c23_Experiment_2_cs.c"
+c24_Experiment_2_cs.obj :	"c24_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c24_Experiment_2_cs.c"
+c25_Experiment_2_cs.obj :	"c25_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c25_Experiment_2_cs.c"
+c26_Experiment_2_cs.obj :	"c26_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c26_Experiment_2_cs.c"
+c27_Experiment_2_cs.obj :	"c27_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c27_Experiment_2_cs.c"
+c28_Experiment_2_cs.obj :	"c28_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c28_Experiment_2_cs.c"
+c29_Experiment_2_cs.obj :	"c29_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c29_Experiment_2_cs.c"
+c30_Experiment_2_cs.obj :	"c30_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c30_Experiment_2_cs.c"
+c31_Experiment_2_cs.obj :	"c31_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c31_Experiment_2_cs.c"
+c32_Experiment_2_cs.obj :	"c32_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c32_Experiment_2_cs.c"
+c33_Experiment_2_cs.obj :	"c33_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c33_Experiment_2_cs.c"
+c34_Experiment_2_cs.obj :	"c34_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c34_Experiment_2_cs.c"
+c35_Experiment_2_cs.obj :	"c35_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c35_Experiment_2_cs.c"
+c36_Experiment_2_cs.obj :	"c36_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c36_Experiment_2_cs.c"
+c37_Experiment_2_cs.obj :	"c37_Experiment_2_cs.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c37_Experiment_2_cs.c"
+Experiment_2_cs_sfun_registry.obj :	"Experiment_2_cs_sfun_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "Experiment_2_cs_sfun_registry.c"
+lccstub.obj :	"C:\Program Files\MATLAB\R2014b\sys\lcc64\lcc64\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2014b\sys\lcc64\lcc64\mex\lccstub.c"

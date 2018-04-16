@@ -1,0 +1,37 @@
+# create sensor mounts and cameras
+TIS_1_mount = visnodes.VisTransform.createTransformNode(r"TIS_1_mount")
+scene.Audi_A8_1.addChild(TIS_1_mount)
+scene.getTransformChild("TIS_1_mount")
+TIS_1_mount.setTranslation(3.916416, 0, 0.419999986886978)
+TIS_1_mount.setRotation(0, 1, 0, 0)
+
+TIS_2_mount = visnodes.VisTransform.createTransformNode(r"TIS_2_mount")
+scene.BMW_Z3_1.addChild(TIS_2_mount)
+scene.getTransformChild("TIS_2_mount")
+TIS_2_mount.setTranslation(3.257052, 0, 0.456000000238419)
+TIS_2_mount.setRotation(0, 1, 0, 0)
+
+TIS_1_Beam_1 = visnodes.VisBeamEllipticalCone_createEllipticalCone(r"TIS_1_Beam_1", 40, 1.0471975511966, 0.15707963267949)
+TIS_1_Beam_1.setBeamColor(1, 0, 0, 0.25)
+TIS_1_Beam_1.setNodeMask(16384, False)
+TIS_1_Beam_1_mount = visnodes.VisTransform.createTransformNode(r"TIS_1_Beam_1_mount")
+scene.TIS_1_mount.addChild(TIS_1_Beam_1_mount)
+scene.getTransformChild("TIS_1_Beam_1_mount")
+TIS_1_Beam_1_mount.setTranslation(0, 0, 0)
+TIS_1_Beam_1_mount.setRotation(0, 1, 0, 0)
+TIS_1_Beam_1.setRotationLegacyYUpAxes(1.5707963267948966, 0, 0, -1)
+TIS_1_Beam_1_mount.addChild(TIS_1_Beam_1)
+
+
+TIS_2_Beam_1 = visnodes.VisBeamEllipticalCone_createEllipticalCone(r"TIS_2_Beam_1", 40, 1.0471975511966, 0.15707963267949)
+TIS_2_Beam_1.setBeamColor(1, 0, 0, 0.25)
+TIS_2_Beam_1.setNodeMask(16384, False)
+TIS_2_Beam_1_mount = visnodes.VisTransform.createTransformNode(r"TIS_2_Beam_1_mount")
+scene.TIS_2_mount.addChild(TIS_2_Beam_1_mount)
+scene.getTransformChild("TIS_2_Beam_1_mount")
+TIS_2_Beam_1_mount.setTranslation(0, 0, 0)
+TIS_2_Beam_1_mount.setRotation(0, 1, 0, 0)
+TIS_2_Beam_1.setRotationLegacyYUpAxes(1.5707963267948966, 0, 0, -1)
+TIS_2_Beam_1_mount.addChild(TIS_2_Beam_1)
+
+
