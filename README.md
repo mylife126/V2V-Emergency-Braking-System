@@ -1,7 +1,7 @@
 # V2V-Emergency-Braking-System
 V2V systems designed to assist present day Emergency Braking Systems by providing additional information about the environment which cannot be obtained by the car's on-board sensor.
 
-Refer <a href="https://github.com/vishweshj/V2V-Emergency-Braking-System/blob/master/Report.pdf">REPORT</a> for more details
+Refer to the <a href="https://github.com/vishweshj/V2V-Emergency-Braking-System/blob/master/Report.pdf">REPORT</a> for more details
 
 ## No V2V Communication - Collision not avoided.
 
